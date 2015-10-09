@@ -5,9 +5,8 @@ Vendify is a template application that lists all current vendors alphabetcally a
 <p>
 The repository is setup similar to how your directory stucture on Shopify looks however it also includes the development assets of the application for the devs. If you just want to install this in your theme follow the Installation process below.  
 </p>
-<p>
+
 [Screenshot][screenshot]
-</p>
 
 <h4>Dependencies</h4>
 The dependencies are compressed for production into /assets directory using gulp and componenets found in the /src directory.
@@ -105,8 +104,8 @@ Anyone is free to use this theme design and development enviroment as a referenc
 [brands_javascript]: https://github.com/Panoply/vendify/blob/master/assets/brands.min.js
 [brands_az]: https://github.com/Panoply/vendify/blob/master/snippets/page_brands-az.liquid 
 [brands_featured]: https://github.com/Panoply/vendify/blob/master/snippets/page_brands-featured.liquid
-[settings_data]: #
-[settings_json]: #
+[settings_data]: https://github.com/Panoply/vendify/blob/master/config/settings_data.json
+[settings_json]: https://github.com/Panoply/vendify/blob/master/config/settings_schema.json
 
 
 [1]: http://docs.shopify.com/themes
