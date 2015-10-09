@@ -1,0 +1,67 @@
+[
+  {
+    "name": "Brands Page",
+    "settings": [
+      {
+        "type": "image",
+        "id": "popular-brands-1.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "collection",
+        "id": "popular-brands1",
+        "label": "URL"
+      },
+      {
+        "type": "image",
+        "id": "popular-brands-2.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "collection",
+        "id": "popular-brands2",
+        "label": "URL"
+      },
+      {
+        "type": "image",
+        "id": "popular-brands-3.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "collection",
+        "id": "popular-brands3",
+        "label": "URL"
+      },
+      {
+        "type": "image",
+        "id": "popular-brands-4.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "collection",
+        "id": "popular-brands4",
+        "label": "URL"
+      },
+      {
+        "type": "image",
+        "id": "popular-brands-5.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "collection",
+        "id": "popular-brands5",
+        "label": "URL"
+      },
+      {
+        "type": "image",
+        "id": "popular-brands-6.jpg",
+        "label": "Image"
+      },
+      {
+        "type": "collection",
+        "id": "popular-brands6",
+        "label": "URL"
+      }
+    ]
+  }
+]
