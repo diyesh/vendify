@@ -61,6 +61,21 @@ Create 2 new files in the directory named <b>assets</b>. Name one file <b>brands
 - [brands.scss][brands_scss]. 
 - [brands.min.js][brands_javascript].
 
+You then need to add the assets to your theme layout. Firstly, add in the <b>brands.scss</b> file to your head. Below is an example of how it should look:
+
+<pre>
+	{{ 'brands.scss.css' | asset_url | stylesheet_tag }} // Include this
+	</head> // Do NOT include this
+</pre>	
+
+Now at the very bottom of your page add the javascript file:
+<pre>
+	{{ 'brands.min.js' | asset_url | script_tag }} // Include this
+	</body> // Do NOT include this
+	</html> // Do NOT include this
+</pre>	
+
+
 <h4>Step 4</h4>
 It's good practice to seperate your code into logical chuncks. Shopify allows us to do this with snippets. You need to Create a 2 new files in the directory named <b>snippets</b>. Name one of these files <b>page_brands-az</b> and the other file <b>page_brands-featured</b>. Copy and paste the code for these files:
 
