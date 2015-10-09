@@ -6,15 +6,14 @@ Vendify is a template application that lists all current vendors alphabetcally a
 The repository is setup similar to how your directory stucture on Shopify looks however it also includes the development assets of the application for the devs. If you just want to install this in your theme follow the Installation process below.  
 </p>
 <p>
-Screenshots: [here](#)
+[Screenshot][screenshot]
 </p>
 
 <h4>Dependencies</h4>
 The dependencies are compressed for production into /assets directory using gulp and componenets found in the /src directory.
 
-- [Enquire.js](#)
-- [Savvior](#)
-- [jQuery Sticky](#)
+- [Enquire.js](http://wicky.nillia.ms/enquire.js/)
+- [Savvior](https://github.com/attila/savvior)
 
 
 Directory structure
@@ -51,25 +50,25 @@ Directory structure
 <h2>Install</h2>
 Setup is fairly easy, there is not much to this at all. If you're lazy and use ruby or gulp to connect to your theme then just add the assets, snippets and template to your theme directory otherwise you can follow the below steps. 
 
-<h5>Step 1</h5>
+<h4>Step 1</h4>
 You need to first setup a new "brands" page in your theme and you can do this by following the instructions found [here][page_setup]. 
 
-<h5>Step 2</h5>
+<h4>Step 2</h4>
 Goto your <b>Customize Theme</b> page in shopify.
 
-<h5>Step 3</h5>
+<h4>Step 3</h4>
 Create 2 new files in the directory named <b>assets</b>. Name one file <b>brands.min.js</b> and the other file <b>brands.scss</b>. Copy and paste the code for these files:
 
 - [brands.scss][brands_scss]. 
 - [brands.min.js][brands_javascript].
 
-<h5>Step 4</h5>
+<h4>Step 4</h4>
 It's good practice to seperate your code into logical chuncks. Shopify allows us to do this with snippets. You need to Create a 2 new files in the directory named <b>snippets</b>. Name one of these files <b>page_brands-az</b> and the other file <b>page_brands-featured</b>. Copy and paste the code for these files:
 
 - [page_brands-az][brands_az]. 
 - [page_brands-featured][brands_featured]. 
 
-<h5>Step 5</h5>
+<h4>Step 5</h4>
 Open your templates directory and add the following two lines to the template file named <b>page.brands.liquid</b>.
 
 <pre>
@@ -77,13 +76,13 @@ Open your templates directory and add the following two lines to the template fi
 {% include 'page_brands-az' %}
 </pre>
 
-<h5>Step 6</h5>
+<h4>Step 6</h4>
 Lastly we want to be able to control what featured brands we are going to showcase. For this we need to add some .json code to our config directory files. Open this directory and add the following lines to the <b>settings_data.json</b> and the <b>settings_schema.json</b> files:
 
 - [settings_data.json][settings_data]
 - [settings_schema.json][settings_json]
 
-<h5>Issues</h5>
+<h4>Issues</h4>
 Everyones shopify setup is different or unique. If you don't see your brands page then you have either not setup your collections correctly or your page correctly. However this all should get you started. 
 
 Resources
@@ -100,12 +99,12 @@ License
 ---------------------
 Anyone is free to use this theme design and development enviroment as a reference under the [MIT License](LICENSE). 
 
-
+[screenshot]: https://github.com/Panoply/vendify/blob/master/screenshot.png
 [page_setup]: https://docs.shopify.com/manual/your-website/pages/create-page
-[brands_scss]: #
-[brands_javascript]: #
-[brands_az]: # 
-[brands_featured]: #
+[brands_scss]: https://github.com/Panoply/vendify/blob/master/assets/brands.scss
+[brands_javascript]: https://github.com/Panoply/vendify/blob/master/assets/brands.min.js
+[brands_az]: https://github.com/Panoply/vendify/blob/master/snippets/page_brands-az.liquid 
+[brands_featured]: https://github.com/Panoply/vendify/blob/master/snippets/page_brands-featured.liquid
 [settings_data]: #
 [settings_json]: #
 
