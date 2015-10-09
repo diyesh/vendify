@@ -61,18 +61,16 @@ Create 2 new files in the directory named <b>assets</b>. Name one file <b>brands
 - [brands.scss][brands_scss]. 
 - [brands.min.js][brands_javascript].
 
-You then need to add the assets to your theme layout. Firstly, add in the <b>brands.scss</b> file to your head. Below is an example of how it should look:
+You then need to add the assets to your theme layout. Firstly, add in the <b>brands.scss</b> file to your head. Below is an example of how it should look. Please remember to add this after all other assets, else you will get conflict and shit. 
 
+<h5>Stylesheet</h5>
 <pre>
-	{{ 'brands.scss.css' | asset_url | stylesheet_tag }} // Include this
-	</head> // Do NOT include this
+	{{ 'brands.scss.css' | asset_url | stylesheet_tag }}
 </pre>	
 
-Now at the very bottom of your page add the javascript file:
+<h5>Javascript</h5>
 <pre>
 	{{ 'brands.min.js' | asset_url | script_tag }} // Include this
-	</body> // Do NOT include this
-	</html> // Do NOT include this
 </pre>	
 
 
