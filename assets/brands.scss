@@ -1,0 +1,63 @@
+.popular-brand {
+	border: 1px solid #ddd;
+	padding: 25px;
+	margin: 10px 0;
+
+	img {
+		width: 100%;
+	}
+}
+
+.list-letters {
+	list-style: none;
+	margin-left: 0;
+	padding: 15px 0;
+	background-color: #fff !important;
+	opacity: 1;
+	border-bottom: 1px solid #ddd;
+	margin-bottom: 0;
+
+	li {
+		margin-right: 4px;
+		display: inline-block;
+		
+		a {
+			font-size: 20px;
+			font-weight: 600;
+			padding-right:10px;
+		}
+	}
+}
+
+#brand-stick {
+	background-color: #fff !important;
+	z-index: 9;
+	max-width: 1260px;
+}
+
+.column { float: left; margin-bottom: 20px;}
+.size-1of2 { width: 50%; }
+.size-1of3 { width: 33.33333%; }
+.size-1of4 { width: 25%; }
+
+
+.li-brands {
+	list-style: none;
+	border: 1px solid #ddd;
+	text-transform: uppercase;
+	padding: 15px;
+	margin:0;
+
+
+	h3 {
+		font-size: 35px;
+	}
+
+	@media (max-width: 768px)  {
+		padding-left: 0;
+		text-align: center;
+		border-bottom: 1px solid #ddd;
+		padding-bottom: 40px;
+	}
+
+}

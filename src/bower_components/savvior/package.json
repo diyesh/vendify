@@ -1,0 +1,42 @@
+{
+  "name": "savvior",
+  "description": "A Javascript multicolumn layout tool alternative to Masonry or Salvattore.",
+  "author": "Attila Beregszaszi <attila@frontseed.com> (http://attilab.com)",
+  "homepage": "http://savvior.org",
+  "version": "0.5.0",
+  "license": "MIT",
+  "main": "dist/savvior.js",
+  "dependencies": {
+    "enquire.js": "~2.1.1"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-bytesize": "^0.1.1",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-concat": "~0.5.1",
+    "grunt-contrib-jasmine": "~0.8.2",
+    "grunt-contrib-jshint": "~0.11.2",
+    "grunt-contrib-uglify": "~0.9.1",
+    "grunt-contrib-watch": "~0.6.1",
+    "grunt-template-jasmine-istanbul": "^0.3.3",
+    "grunt-umd": "~2.3.3",
+    "jasmine-jquery": "^2.0.6",
+    "jquery": "~2.1.3"
+  },
+  "repository": "attila/savvior",
+  "bugs": {
+    "url": "https://github.com/attila/savvior/issues"
+  },
+  "scripts": {
+    "test": "grunt test"
+  },
+  "keywords": [
+    "savvior",
+    "grid",
+    "layout",
+    "columns",
+    "matchMedia",
+    "masonry",
+    "salavttore"
+  ]
+}

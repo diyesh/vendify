@@ -1,0 +1,58 @@
+<div class="grid">
+	<div class="grid__item one-whole">
+		<hr>
+		<h5>A-Z LISTINGS</h5>
+	</div>
+</div>
+<div class="grid medium--hide small--hide">
+	<div class="grid__item one-whole">
+		<ul class="list-letters" id="filter">
+			<li><a href="#">ALL</a></li>
+			<li><a href="##">#</a></li>
+			<li><a href="#A">A</a></li>
+			<li><a href="#B">B</a></li>
+			<li><a href="#C">C</a></li>
+			<li><a href="#D">D</a></li>
+			<li><a href="#E">E</a></li>
+			<li><a href="#F">F</a></li>
+			<li><a href="#G">G</a></li>
+			<li><a href="#H">H</a></li>
+			<li><a href="#I">I</a></li>
+			<li><a href="#J">J</a></li>
+			<li><a href="#K">K</a></li>
+			<li><a href="#L">L</a></li>
+			<li><a href="#M">M</a></li>
+			<li><a href="#N">N</a></li>
+			<li><a href="#O">O</a></li>
+			<li><a href="#P">P</a></li>
+			<li><a href="#Q">Q</a></li>
+			<li><a href="#R">R</a></li>
+			<li><a href="#S">S</a></li>
+			<li><a href="#T">T</a></li>
+			<li><a href="#U">U</a></li>
+			<li><a href="#V">V</a></li>
+			<li><a href="#W">W</a></li>
+			<li><a href="#X">X</a></li>
+			<li><a href="#Y">Y</a></li>
+			<li><a href="#Z">Z</a></li>
+		</ul>
+	</div>
+</div>
+<div class="grid-uniform savvior-grid">
+	{% assign numbers = '01234567890' %}
+	{% assign section_letter = '' %}
+	{% for product_vendor in shop.vendors %}
+	{% capture product_letter %}{{ product_vendor | truncate: 1, '' | upcase }}{% endcapture %}
+	{% if numbers contains product_letter %}{% assign product_letter = '#' %}{% endif %}
+	{% if product_letter != section_letter %}
+	{% assign section_letter = product_letter %}
+	{% unless forloop.first %}</ul></div>{% endunless %}
+	<div id="{{ section_letter }}" class="grid__item column">
+		<ul class="li-brands">
+			<h3>{{ section_letter }}</h3>
+			{% endif %}
+			<li><a href="/collections/{{ product_vendor | handleize }}">{{ product_vendor }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>

@@ -1,0 +1,48 @@
+{
+  "name": "savvior",
+  "version": "0.5.0",
+  "homepage": "http://savvior.org",
+  "authors": [
+    "Attila Beregszaszi <attila@frontseed.com>"
+  ],
+  "description": "A Javascript multicolumn layout tool alternative to Masonry or Salvattore.",
+  "main": "dist/savvior.js",
+  "dependencies": {
+    "enquire": "~2.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/attila/savvior.git"
+  },
+  "keywords": [
+    "savvior",
+    "grid",
+    "layout",
+    "columns",
+    "matchMedia",
+    "masonry",
+    "salvattore"
+  ],
+  "license": "MIT",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "tests"
+  ],
+  "_release": "0.5.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.5.0",
+    "commit": "1676706acb98e9e00d9a45444c5170bf6f543747"
+  },
+  "_source": "git://github.com/attila/savvior.git",
+  "_target": "~0.5.0",
+  "_originalSource": "savvior",
+  "_direct": true
+}
