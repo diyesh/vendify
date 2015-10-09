@@ -70,7 +70,7 @@ You then need to add the assets to your theme layout. Firstly, add in the <b>bra
 
 <h5>Javascript</h5>
 <pre>
-	{{ 'brands.min.js' | asset_url | script_tag }} // Include this
+	{{ 'brands.min.js' | asset_url | script_tag }}
 </pre>	
 
 
